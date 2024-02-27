@@ -1,0 +1,98 @@
+.desktop-only {
+    display: inline-block;
+    }
+    
+    .mobile-only {
+    display: none;
+    }
+    
+    p {
+    font-size: 18px !important;
+    }
+    
+    h1 {
+    color: black !important;
+    }
+    
+    .quantore-btn {
+    background-color: #000 !important;
+    color: #FFFFFF !important;
+    padding: 1rem 1rem !important;
+    border-radius: 18px !important;
+    font-weight: 700 !important;
+    border: 2px solid #000 !important;
+    font-size: 18px !important;
+    }
+    
+    .quantore-btn:hover {
+    background-color: transparent !important;
+    color: #000 !important;
+    padding: 1rem 1rem !important;
+    border-radius: 18px !important;
+    font-weight: 700 !important;
+    border: 2px solid #000 !important;
+    font-size: 18px !important;
+    }
+    
+    
+    .kalender-bg {
+    background-image: url("../agendaspecial-img/kalendar.png");
+    background-repeat: no-repeat;
+    background-position: 100% 82%;
+    background-size: cover;
+    }
+    
+    .agendass-bg {
+    background-image: url("../agendaspecial-img/agendass.png");
+    background-repeat: no-repeat;
+    background-position: 100% 82%;
+    background-size: cover;
+    }
+    
+    .reactioneel-bg {
+    background-image: url("../agendaspecial-img/header.png");
+    background-repeat: no-repeat;
+    background-position: 100% 82%;
+    background-size: cover;
+    }
+    
+    .bureau-banner {
+    background-image: url("../agendaspecial-img/bureau-header.png");
+    background-repeat: no-repeat;
+    background-position: 100% 40%;
+    background-size: cover;
+    }
+    
+    .omslag-banner {
+    background-image: url("../agendaspecial-img/omslagen.png");
+    background-repeat: no-repeat;
+    background-position: 100% 80%;
+    background-size: cover;
+    }
+    
+    .zakagendas-bg {
+    background-image: url("../agendaspecial-img/zakagendas.png");
+    background-repeat: no-repeat;
+    background-position: 100% 40%;
+    background-size: cover;
+    }
+    
+    @media screen and (max-width: 992px) {
+    .desktop-only {
+    display: none;
+    }
+    
+    .mobile-only {
+    display: inline-block;
+    }
+    
+    h1 {
+        font-size: 35px;
+        }
+    }
+    
+    @media screen and (max-width: 375px) {
+    h1 {
+        font-size: 30px;
+        }
+        }

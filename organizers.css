@@ -1,0 +1,75 @@
+.grey-bg {
+    background-image: url("../bureau-img/grey-bg.jpg");
+    }
+    
+    .blauw-bg {
+    background-color: #cdeafb;
+    }
+    
+    .table {
+    table-layout: fixed;
+    width: 100%;
+    }
+    
+    p, li {
+    font-size: 18px !important;
+    }
+    
+    .table-responsive {
+        display: inline-block!important;
+        }
+    
+    @media screen and (max-width: 768px) {
+    .mb-mobile {
+    margin-bottom: 8%;
+    }
+    
+    p, li {
+    font-size: 17px !important;
+    }
+    
+     .product-line {
+    font-size: 17px !important;
+    }
+    }
+    
+    @media screen and (max-width: 425px) {
+    p, li {
+    font-size: 16px !important;
+    }
+    
+    .product-line {
+    font-size: 16px !important;
+    }
+    }
+     
+    .omslag-banner {
+    background-image: url("../organizers-img/omslagen.png");
+    background-repeat: no-repeat;
+    background-position: 100% 60%;
+    background-size: cover;
+    }
+     
+    .product-line {
+    color: black !important;
+    text-decoration: none !important;
+    font-size: 18px;
+    }
+    
+    .product-line:hover {
+    color: black !important;
+    text-decoration: underline !important;
+    font-size: 18px;
+    }
+    
+    .product-line-2 {
+    color: black !important;
+    text-decoration: none !important;
+    font-weight: 700 !important;
+    }
+    
+    .product-line-2:hover {
+    color: black !important;
+    text-decoration: underline !important;
+    font-weight: 700 !important;
+    }

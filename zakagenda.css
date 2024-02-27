@@ -1,0 +1,65 @@
+.zakagendas-bg {
+    background-image: url("../agendaspecial-img/zakagendas.png");
+    background-repeat: no-repeat;
+    background-position: 100% 33%;
+    background-size: cover;
+    }
+    
+    .bitmap2 {
+    width: 25%;
+    }
+    
+    p, li {
+    font-size: 18px;
+    }
+    
+     .product-line {
+    font-size: 18px;
+    }
+    
+    @media screen and (max-width: 768px) {
+    .mb-mobile {
+    margin-bottom: 8%;
+    }
+    
+    p, li {
+    font-size: 17px !important;
+    }
+    
+    .product-line {
+    font-size: 17px !important;
+    }
+    }
+    
+    @media screen and (max-width: 425px) {
+    p, li {
+    font-size: 16px !important;
+    }
+    
+     .product-line {
+    font-size: 17px !important;
+    }
+    }
+    
+    .grey-bg {
+    background-image: url("../bureau-img/grey-bg.jpg");
+    }
+    
+    .blauw-bg {
+    background-color: #cdeafb;
+    }
+    
+    .product-line {
+    color: black !important;
+    text-decoration: none !important;
+    }
+    
+    .product-line:hover {
+    color: black !important;
+    text-decoration: underline !important;
+    }
+    
+    
+    b {
+    font-weight: 700!important;
+    }

@@ -1,0 +1,656 @@
+/* ---------- VENDOR CSS CHECKLIST: ------------------ */ /*
+
+***** Required variables ******
+
+-—primary-color 
+
+****** General ******
+
+Import necessary fonts, add scroll-behavior, body styling, and basic typography
+
+***** Buttons ****** 
+
+Include styling for the primary and / or secondary buttons, plus the form buttons
+
+#form-container button, #form-container button:hover, .sp-cta-btn and .sp-cta-btn:hover selectors should be included in the styling of the primary button, so the signup pages don’t break
+
+****** Additional sections ******
+
+styling for LOGO and NEWS POST 
+
+****** Signup pages *******
+
+Make sure to set a dark color for the background of the signup page in the class .sp-dark-bg (in the signup page CSS - the color changes per vendor) and check if the primary-color matches it; otherwise set another variable color as the main color for the signup page.
+
+*/
+
+@import url("https://use.typekit.net/zmj5zsu.css");
+@import url("https://fonts.googleapis.com/css?family=Bitter&display=swap");
+@import url("https://use.typekit.net/itc0epo.css");
+
+:root {
+  --primary-color: #e2001a;
+  --primary-color-sp: #e50006;
+}
+
+
+@font-face {
+  font-family: "Nudista";
+  src: url(https://cdn.channext.eu/quantore/fonts/nudista.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.clarendonbold {
+  /*font-family: clarendon-urw, bitter, serif;*/
+  font-weight: 700;
+  font-style: normal;
+}
+
+.clarendon {
+  /*font-family: clarendon-urw, bitter, serif;*/
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* - - - - - - - - - - menubar - - - - - - - - - - */
+
+a.dropdown-item,
+a.dropdown-item:focus,
+a.dropdown-item:hover {
+  background: #fff;
+  color: #000 !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #000 !important;
+}
+
+.navbar-light:hover .navbar-nav:hover .nav-link:hover {
+  color: #000 !important;
+}
+
+.navbar-brand img {
+  max-width: 100px !important;
+}
+
+.dropdown .marker {
+  width: 0px !important;
+}
+
+.dropdown.show .dropdown-item,
+ .navbar.mobile .category a  {
+  font-size: 14px !important;
+}
+
+/* - - - - - - - - - - START LAYOUT STYLING - - - - - - - - - - */
+
+body {
+  /* font-family: "Nudista", sans-serif;*/
+  font-family: "adelle-sans", sans-serif;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #333;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+font-weight: 700;
+}
+
+h1 {
+  font-size: 45px;
+  line-height: 55px;
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 45px;
+}
+
+h3 {
+  font-size: 28px;
+  line-height: 40px;
+}
+
+h4 {
+  font-size: 23px;
+    line-height: 33px;
+
+}
+
+@media screen and (max-width: 992px) {
+
+h1 {
+  font-size: 36px;
+  line-height: 46px;
+
+}
+
+h2 {
+  font-size: 28px;
+  line-height: 38px;
+}
+
+h3 {
+  font-size: 22px;
+  line-height: 32px;
+  }
+
+h4 {
+  font-size: 18px;
+}
+}
+
+@media screen and (max-width: 425px) {
+
+h1 {
+  font-size: 28px;
+    line-height: 38px;
+}
+
+h2 {
+  font-size: 22px;
+  line-height: 32px;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 30px;
+  }
+
+h4 {
+  font-size: 18px;
+}
+}
+
+a,
+a:visited {
+  color: #e2001a;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: #333;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+table {
+  font-size: 14px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  margin: 0 0 0 15px;
+  font-weight: 400!important;
+}
+
+/* - - - - - - - - - - GENERAL ELEMENTS - - - - - - - - - - */
+
+.price .small {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.price {
+  font-size: 28px;
+  margin: 0 0 10px 0;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.price-from {
+  text-decoration: line-through;
+}
+
+.img-fluid {
+  max-height: 100%;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+}
+
+.col-md-6,
+.col-sm-6,
+.col-xs-12,
+.col-md-4,
+.col-sm-4,
+.col-md-3 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.marginT50 {
+  margin-top: 50px;
+}
+
+.fullwidth-product {
+  background: #ececec;
+}
+
+.fullwidth-product h2 {
+  font-size: 30px;
+}
+
+.fullwidth-product .right {
+  margin-top: 100px;
+}
+
+.product {
+  min-height: 700px;
+}
+
+.product-low {
+  min-height: 500px;
+}
+
+.artikelcode {
+  font-style: italic;
+  margin-top: 15px;
+}
+
+.txt-box {
+  background: rgba(0, 0, 0, 0.4);
+  border: 2px solid #fff;
+  border-radius: 0 30px;
+  color: #fff;
+  padding: 15px;
+  font-size: 1em;
+}
+
+.top-quote {
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.worksmart-quote span,
+.tip-quote span {
+  max-width: 200px;
+  display: block;
+  margin-top: 20px;
+}
+
+.sub {
+  font-size: 10px;
+}
+
+b {
+font-weight: 700!important;
+}
+
+.no-padding {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.no-padding-tb {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.no-margin {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* - - - - - - - - - - FOOTER - - - - - - - - - - */
+
+.quantore-footer {
+  background: #000;
+  padding: 10px 0;
+}
+
+.quantore-footer a,
+.quantore-footer a:visited {
+  color: #fff;
+}
+
+.quantore-footer a:hover {
+  color: #e2001a;
+}
+
+/* - - - - - - - - - - nav - - - - - - - - - - */
+
+.navbar {
+  min-height: 60px;
+  list-style-type: none;
+  font-size: 1.1em;
+  padding: 0;
+}
+
+.bg-dark {
+  background-color: #000 !important;
+}
+
+.navbar-toggler {
+  color: #fff !important;
+  border-color: #fff !important;
+  margin-right: 15px;
+  padding: 0.25rem;
+}
+
+.logo {
+  position: fixed;
+  top: 0;
+  left: 15;
+  display: inline;
+  z-index: 99;
+}
+
+.navbar-expand-md .navbar-nav > li > a,
+.navbar-dark .navbar-nav .nav-link {
+  color: #000;
+  padding: 10px 15px;
+}
+
+.navbar-expand-md .navbar-nav > li > a:focus,
+.navbar-expand-md .navbar-nav > li > a:hover {
+  color: #fff;
+  background-color: transparent;
+}
+
+.navbar-expand-md .navbar-nav > .active > a,
+.navbar-expand-md .navbar-nav > .active > a:focus,
+.navbar-expand-md .navbar-nav > .active > a:hover {
+  color: #fff;
+  background-color: transparent;
+}
+
+.navbar-expand-md .navbar-nav > .open > a,
+.navbar-expand-md .navbar-nav > .open > a:focus,
+.navbar-expand-md .navbar-nav > .open > a:hover {
+  color: #fff;
+  background-color: transparent;
+}
+
+.dropdown-menu {
+  margin-top: 0;
+}
+
+ul.dropdown-menu li,
+ul.navbar-nav li {
+  margin: 0;
+}
+
+.dropdown-menu > li > a {
+  padding: 5px 10px 5px 15px;
+}
+
+.dropdown-menu > li > a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: 400;
+  line-height: 1.42857143;
+  color: #000 !important;
+  white-space: nowrap;
+}
+
+.dropdown-menu > li > a:focus,
+.dropdown-menu > li > a:hover {
+  color: #e2001a;
+  background-color: transparent;
+}
+
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:focus,
+.dropdown-menu > .active > a:hover {
+  color: #e2001a;
+  text-decoration: none;
+  background-color: #fff;
+  outline: 0;
+}
+
+.dropdown-menu {
+  color: #fff;
+  background-color: #000;
+}
+
+.navbar-toggler {
+  margin-top: 5px;
+}
+
+@media (min-width: 768px) {
+  .dropdown-menu {
+    color: #212529;
+    background-color: #fff;
+  }
+  .dropdown-menu > li > a {
+    color: #000;
+  }
+
+  .dropdown-menu > li > a {
+    color: #000;
+  }
+
+  .dropdown-menu .dropdown-item {
+    color: #000;
+    text-decoration: none !important;
+  }
+
+  .dropdown-menu .dropdown-item:hover {
+    color: #000 !important;
+    text-decoration: underline !important;
+  }
+}
+
+/* - - - - - - - - - - BACK TO TOP BUTTON - - - - - - - - - - */
+
+.back-to-top {
+  cursor: pointer;
+  position: fixed;
+  top: 75px;
+  right: 20px;
+  display: none;
+  z-index: 10000000;
+}
+
+.btn-primary.back-to-top{
+  color: #fff;
+  background-color: #e2001a;
+  border-color: #e2001a;
+  padding: 10px 16px !important;
+  font-size: 18px !important;
+  line-height: 1.3333333 !important;
+  border-radius: 6px !important;
+}
+
+.btn-primary:hover.back-to-top {
+  background-color: #e2001a;
+  border-color: #e2001a;
+}
+
+#form-container button,
+.sp-cta-btn {
+  color: #fff!important;
+  background-color: #e2001a;
+  border-color: #e2001a;
+  padding: 10px 16px !important;
+  font-size: 18px !important;
+  line-height: 1.3333333 !important;
+  border-radius: 6px !important;
+  text-decoration: none !important;
+}
+
+#form-container button:hover,
+.sp-cta-btn:hover {
+  background-color: #e2001a;
+  border-color: #e2001a;
+  color: #fff!important;
+  text-decoration: underline !important;
+}
+
+/* - - - - - - - - - - MAGAZINE  - - - - - - - - - - */
+
+@import url("https://fonts.googleapis.com/css?family=Bitter&display=swap");
+
+/* - - - - - - - - - - INDEX - - - - - - - - - - */
+
+.index {
+  margin-top: 60px;
+}
+
+.lg-bg .img {
+  max-height: 200px;
+}
+
+/* - - - - - - - - - - INDEX - BUTTONS - - - - - - - - - - */
+
+.button {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 130px;
+}
+
+.index-button-txt {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.75em;
+  line-height: 1.875em;
+  margin: 0;
+  padding: 0;
+  font-weight: 900;
+  text-shadow: 3px 1px 7px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* logo */
+
+.brand-logo {
+  max-height: 80px;
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.brand-logo img {
+  max-height: inherit !important;
+  max-width: 100% !important;
+  height: 60px;
+}
+
+/* NEWS POSTS */
+.img-responsive {
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 185px !important;
+}
+
+@import url("https://use.typekit.net/itc0epo.css");
+
+.jumbotron {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.jumbotron::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.jumbotron h1 {
+  font-size: 2.6rem;
+  color: white !important;
+  margin-top: 5%;
+}
+
+@media screen and (max-width: 768px) {
+  .jumbotron h1 {
+    font-size: 2.1rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .jumbotron h1 {
+    font-size: 1.5rem;
+  }
+}
+
+.jumbotron > * {
+  position: relative;
+  z-index: 10;
+}
+
+.col-12 > p.text-left {
+  display: none;
+}
+
+.ck-content .image-style-side {
+  margin: 30px 50px;
+}
+
+.ck-content {
+  font-family: "adelle-sans", sans-serif;
+}
+
+.ck-content p,
+.ck-content li {
+  font-size: 16px;
+}
+
+.cn-title {
+  font-size: 56px;
+  font-family: "adelle-sans", sans-serif;
+}
+.ck-content h4 {
+  font-size: 24px;
+}
+.ck-content h5 {
+  font-size: 18px;
+}
+
+/* widget */
+
+/* hiding about us block in the index */
+/* hiding about us item inside the dropdown */
+
+.row-eq-height .col-md-6.over-ons,
+.dropdown-list .over-ons {
+  display: none;
+}
+
+.promotion-container {
+  display: none;
+}
+.item.news {
+  display: none;
+}
+
+/* because we're hiding the about block, the block number 3 needs a border  */
+.dropdown.full-width .dropdown-list .category-border-right:nth-of-type(3) {
+  border-right: 1px solid #d5d5d5 !important;
+}
+
+/* hiding news item in the nav */
+
+.navbar .nav-item.news {
+  display: none;
+}
